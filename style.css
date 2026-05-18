@@ -1,0 +1,129 @@
+/* 기본 스타일 초기화 및 폰트 설정 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Malgun Gothic', sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 상단 헤더 */
+header {
+    text-align: center;
+    padding: 30px 0;
+    background: #4a90e2;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+/* 입력 양식 (폼) */
+.form-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+input[type="file"] {
+    margin-top: 5px;
+}
+
+/* 등록 버튼 */
+button {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #357abd;
+}
+
+/* 게시글 목록 */
+.posts-section h2 {
+    margin-bottom: 15px;
+    color: #4a90e2;
+}
+
+.post-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: #777;
+    font-size: 14px;
+}
+
+.post-author {
+    font-weight: bold;
+    color: #333;
+}
+
+.post-content {
+    line-height: 1.6;
+    white-space: pre-wrap; /* 사용자가 입력한 줄바꿈 그대로 표시 */
+}
+
+.post-image {
+    max-width: 100%;
+    max-height: 400px;
+    display: block;
+    margin-top: 15px;
+    border-radius: 5px;
+    object-fit: cover;
+}
